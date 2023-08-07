@@ -22,14 +22,14 @@ class Shape {
 }
 
 class Triangle extends Shape {
-    constructor() {
-        super('triangle', new VectorRenderer('triangle'));
+    constructor(name: string, renderer: Renderer) {
+        super(name, renderer);
     }
 }
 
 class Square3 extends Shape {
-    constructor() {
-        super('square', new RasterRenderer('square'));
+    constructor(name: string, renderer: Renderer) {
+        super(name, renderer);
     }
 }
 
